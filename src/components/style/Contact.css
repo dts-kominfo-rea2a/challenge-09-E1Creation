@@ -1,0 +1,15 @@
+.custom-contact{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 40vw;
+    padding: 20px 0;
+    gap: 100px;
+    box-shadow: 2px 2px 4px 0 gray;
+    background-color: white;
+    border-radius: 40px;
+}
+.custom-contact img{
+    width: 150px;
+    border-radius: 100px;
+}

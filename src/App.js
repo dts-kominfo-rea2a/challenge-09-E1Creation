@@ -1,13 +1,23 @@
 import './App.css';
+import './components/style/Header.css';
+import './components/style/Contact.css';
+
 
 // Uncomment untuk memuat daftar kontak
-// import contacts from './data/contacts.json';
+import contacts from './data/contacts.json';
+import Header from './components/Header';
+import Contact from './components/Contact';
+
 
 const App = () => {
   // Masukkan Header dan Contact ke dalam div App
   return (
     <div className="App">
-      
+      <Header/>{
+      contacts.map((contact)=>{
+        return <Contact data={contact}/>
+      })
+      }
     </div>
   );
 }
